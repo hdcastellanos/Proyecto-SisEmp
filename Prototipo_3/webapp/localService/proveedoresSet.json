@@ -1,0 +1,36 @@
+[{
+	"ID": "1",
+	"Nombre": "Bondeo S.A",
+	"Telefono":"3182337402",
+	"Correo":"bondeoS.A@outlook.com",
+	"Direccion":"Calle 12# 43-23",
+	"Ciudad":"Bogotá"
+}
+,
+{
+    "ID": "2",
+	"Nombre": "Punto Flex S.A",
+	"Telefono":"3217448423",
+	"Correo":"puntoflx@outlook.com",
+	"Direccion":"Calle 32# 42-98",
+	"Ciudad":"Medellin"	
+},
+
+{
+    "ID": "3",
+	"Nombre": "Encajes S.A",
+	"Telefono":"3128449562",
+	"Correo":"EncajesS.A@outlook.com",
+	"Direccion":"Calle 32# 42-98",
+	"Ciudad":"Bogota"	
+},
+{
+    "ID": "4",
+	"Nombre": "Gulfer Pizantex S.A",
+	"Telefono":"3145449582",
+	"Correo":"GF.A@outlook.com",
+	"Direccion":"Calle 170# 35-98",
+	"Ciudad":"Bogota"	
+}
+
+]

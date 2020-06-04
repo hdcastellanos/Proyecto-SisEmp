@@ -1,0 +1,79 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo1.controller.InventarioProducto" xmlns="sap.m"
+	xmlns:layout1="sap.ui.commons.layout">
+	<Page showHeader="true" title="Marie Louise Inventarios" showFooter="false" showNavButton="true" enableScrolling="false"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<layout1:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+				<layout1:positions>
+					<layout1:PositionContainer left="0px" top="58px">
+						<layout1:control>
+							<List id="sap_m_Page_0-content-sap_m_ObjectList-1588887640354-nouaf9rif5yv9lqnor526f2b7_S7" mode="SingleSelectMaster" width="1257.5625px"
+								headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="10"
+								growingScrollToLoad="true" visible="true" itemPress="_onObjectListItemPress" items="{path:'/inventarioSet', templateShareable:true}">
+								<infoToolbar>
+									<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+										<content>
+											<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+										</content>
+									</Toolbar>
+								</infoToolbar>
+								<headerToolbar>
+									<Toolbar enabled="true" visible="true" width="" design="Solid">
+										<content>
+											<SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+										</content>
+									</Toolbar>
+								</headerToolbar>
+								<items>
+									<ObjectListItem intro="" title="{Nombre}"
+										number="{path: 'Cantidad', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" numberUnit="" numberState="None"
+										type="Active" selected="true" showMarkers="false" press="_onObjectListItemPress1">
+										<attributes>
+											<ObjectAttribute text="{Estado}" active="false" visible="true"/>
+											<ObjectAttribute text="" active="false" visible="true"/>
+										</attributes>
+										<firstStatus>
+											<ObjectStatus text="" state="None" visible="true"/>
+										</firstStatus>
+										<secondStatus>
+											<ObjectStatus text="" state="None" visible="true"/>
+										</secondStatus>
+									</ObjectListItem>
+								</items>
+							</List>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="693px" top="204px">
+						<layout1:control>
+							<ObjectStatus text="" state="None" visible="true"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="12px" top="8px">
+						<layout1:control>
+							<OverflowToolbarButton text="Action" type="Default" icon="sap-icon://sort" iconFirst="true" width="125.5px" enabled="true" visible="true"
+								iconDensityAware="false" press="_onOverflowToolbarButtonPress"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+					<layout1:PositionContainer left="1007px" top="8px">
+						<layout1:control>
+							<Button text="Crear Orden de Compra" type="Accept" icon="sap-icon://add" iconFirst="true" width="241.00000000px" enabled="true"
+								visible="true" iconDensityAware="false" press="_onButtonPress"/>
+						</layout1:control>
+					</layout1:PositionContainer>
+				</layout1:positions>
+			</layout1:AbsoluteLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

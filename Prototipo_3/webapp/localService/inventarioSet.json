@@ -1,0 +1,271 @@
+[{
+	"ID": "1",
+	"Nombre": "Brasier Encaje",
+	"Referencia": 294,
+	"Color": "Negro",
+	"Cantidad": 180,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "24/5/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "2",
+	"Nombre": "Brasier Materno",
+	"Referencia": 701,
+	"Color": "Blanco",
+	"Cantidad": 258,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "12/12/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "3",
+	"Nombre": "Panty",
+	"Referencia": 1142,
+	"Color": "Rojo",
+	"Cantidad": 700,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "23/12/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "4",
+	"Nombre": "Panty Encaje",
+	"Referencia": 437,
+	"Color": "Azul",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "17/3/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "5",
+	"Nombre": "Cinturilla",
+	"Referencia": 224,
+	"Color": "Beige",
+	"Cantidad": 10000,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "1/10/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "6",
+	"Nombre": "Brasier esplada encaje",
+	"Referencia": 128,
+	"Color": "Negro",
+	"Cantidad": 6000,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "4/9/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "7",
+	"Nombre": "Brasier Encaje",
+	"Referencia": 3020,
+	"Color": "Blanco",
+	"Cantidad": 60,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "13/8/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "8",
+	"Nombre": "Brasier Materno",
+	"Referencia": 222,
+	"Color": "Rojo",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "28/2/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "9",
+	"Nombre": "Panty",
+	"Referencia": 1490,
+	"Color": "Azul",
+	"Cantidad": 50,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "26/11/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "10",
+	"Nombre": "Panty Encaje",
+	"Referencia": 1290,
+	"Color": "Beige",
+	"Cantidad": 40,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "20/6/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "11",
+	"Nombre": "Cinturilla",
+	"Referencia": 360,
+	"Color": "Negro",
+	"Cantidad": 5000,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "3/7/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "12",
+	"Nombre": "Brasier esplada encaje",
+	"Referencia": 140,
+	"Color": "Blanco",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "2/10/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "13",
+	"Nombre": "Brasier Encaje",
+	"Referencia": 135,
+	"Color": "Rojo",
+	"Cantidad": 1500,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "8/9/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "14",
+	"Nombre": "Brasier Materno",
+	"Referencia": 125,
+	"Color": "Azul",
+	"Cantidad": 300,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "27/3/2019",
+	"Tipo_de_producto": "Producto Terminado"
+}, {
+	"ID": "15",
+	"Nombre": "Laminado Gimme Nylon",
+	"Referencia": 255,
+	"Color": "Negro",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "21/5/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "16",
+	"Nombre": "Powernet",
+	"Referencia": 899,
+	"Color": "Negro",
+	"Cantidad": 17,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "22/11/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "17",
+	"Nombre": "Nylon Sesgo",
+	"Referencia": 1900,
+	"Color": "Blanco",
+	"Cantidad": 35,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "19/3/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "18",
+	"Nombre": "Elástico Base ",
+	"Referencia": 421,
+	"Color": "Beige",
+	"Cantidad": 68,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "20/10/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "19",
+	"Nombre": "Elástico ",
+	"Referencia": 3520,
+	"Color": "Beige",
+	"Cantidad": 12,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "11/3/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "20",
+	"Nombre": "Uncont Gafete continuo",
+	"Referencia": 2,
+	"Color": "Azul",
+	"Cantidad": 807,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "6/8/2019",
+	"Tipo_de_producto": "Materia Prima"
+}, {
+	"ID": "21",
+	"Nombre": "Marquilla composición",
+	"Referencia": 10,
+	"Color": "NA",
+	"Cantidad": 654,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "16/10/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "22",
+	"Nombre": "Marquilla Satín",
+	"Referencia": 11,
+	"Color": "NA",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "7/11/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "23",
+	"Nombre": "Sujetador",
+	"Referencia": 12,
+	"Color": "NA",
+	"Cantidad": 960,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "1/3/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "24",
+	"Nombre": "Cubreprendras",
+	"Referencia": 13,
+	"Color": "NA",
+	"Cantidad": 1111,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "22/6/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "25",
+	"Nombre": "Etiqueta carton código de barras",
+	"Referencia": 14,
+	"Color": "NA",
+	"Cantidad": 0,
+	"Estado": "Depleted",
+	"Ultimo_Lote": "27/9/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "26",
+	"Nombre": "Gancho Plástico Estampado",
+	"Referencia": 15,
+	"Color": "NA",
+	"Cantidad": 586,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "1/7/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "27",
+	"Nombre": "Etiqueta Marie Louise",
+	"Referencia": 16,
+	"Color": "NA",
+	"Cantidad": 1192,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "22/2/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "28",
+	"Nombre": "Cajas de carton",
+	"Referencia": 17,
+	"Color": "NA",
+	"Cantidad": 333,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "7/8/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "29",
+	"Nombre": "Hablador prenda",
+	"Referencia": 18,
+	"Color": "NA",
+	"Cantidad": 763,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "13/4/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}, {
+	"ID": "30",
+	"Nombre": "Bolsa de empaque",
+	"Referencia": 19,
+	"Color": "NA",
+	"Cantidad": 431,
+	"Estado": "On Stock",
+	"Ultimo_Lote": "2/2/2019",
+	"Tipo_de_producto": "Producto Semiterminado"
+}]

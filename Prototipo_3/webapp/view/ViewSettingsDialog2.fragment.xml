@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<ViewSettingsDialog>
+		<sortItems>
+			<ViewSettingsItem text="Nombre" key="Nombre"/>
+			<ViewSettingsItem text="Unidades" key="Unidades"/>
+			<ViewSettingsItem text="Estado" key="Estado"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

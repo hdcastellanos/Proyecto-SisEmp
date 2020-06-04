@@ -1,0 +1,25 @@
+{
+	"dataBinding": {
+		"/webapp/view/Home.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/CrearOrdenDeCompra2.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/Home2.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/InventarioProducto.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/EstadoOrdenesDeCompra.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/DetalleOdc.view.xml": {
+			"entitySet": "/ordenes_de_compraSet"
+		},
+		"/webapp/view/DetalleProducto.view.xml": {
+			"entitySet": "/inventarioSet"
+		}
+	}
+}

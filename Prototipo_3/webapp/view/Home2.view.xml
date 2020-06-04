@@ -1,0 +1,43 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo1.controller.Home2" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page showHeader="true" title="Marie Louise Inventarios" showFooter="false" showNavButton="false">
+		<content>
+			<layout:VerticalLayout width="1220.5750732421875px" visible="true" class="sapUiLargeMargin sapUiContentPadding">
+				<layout:content>
+					<ObjectListItem intro="" title="Las existencias de Tela Ref. 834 está baja" icon="sap-icon://message-warning" number="" numberUnit=""
+						numberState="None" type="Inactive" selected="false" showMarkers="false">
+						<attributes/>
+						<firstStatus/>
+						<secondStatus/>
+					</ObjectListItem>
+					<layout:VerticalLayout width="1220.5750732421875px" visible="true" class="sapUiLargeMargin sapUiContentPadding">
+						<layout:content>
+							<ObjectListItem intro="" title="no hay suficientes unidades de las materias primas disponibles" icon="sap-icon://sys-cancel-2" number=""
+								numberUnit="" numberState="None" type="Inactive" selected="false" showMarkers="false">
+								<attributes/>
+								<firstStatus/>
+								<secondStatus/>
+							</ObjectListItem>
+							<Button text="Ver inventario" type="Default" icon="sap-icon://product" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+						</layout:content>
+					</layout:VerticalLayout>
+				</layout:content>
+			</layout:VerticalLayout>
+			<Button text="Ver estado de las ordenes de compra" type="Default" icon="sap-icon://order-status" iconFirst="true" width="auto"
+				enabled="true" visible="true" iconDensityAware="false" class="sapUiLargeMarginBegin"/>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

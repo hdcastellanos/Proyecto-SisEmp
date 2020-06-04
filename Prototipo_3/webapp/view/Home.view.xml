@@ -1,0 +1,79 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo1.controller.Home" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page showHeader="true" title="Marie Louise Inventarios" showFooter="false" showNavButton="false">
+		<content>
+			<layout:VerticalLayout width="1220.5750732421875px" visible="true" class="sapUiLargeMargin sapUiContentPadding">
+				<layout:content>
+					<ObjectListItem intro="" title="Hay suficientes unidades de las materias primas disponibles" icon="sap-icon://sys-enter-2" number=""
+						numberUnit="" numberState="None" type="Inactive" selected="false" showMarkers="false">
+						<attributes/>
+						<firstStatus/>
+						<secondStatus/>
+					</ObjectListItem>
+				</layout:content>
+			</layout:VerticalLayout>
+			<layout:BlockLayout background="Default" visible="true">
+				<layout:content>
+					<layout:BlockLayoutRow scrollable="false">
+						<layout:content>
+							<layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<GenericTile header="Ordenes de Compra" subheader="Ver Estado" frameType="OneByOne" press="_onGenericTilePress">
+										<tileContent>
+											<TileContent footer="" unit="">
+												<content>
+													<NumericContent value="" valueColor="Neutral" indicator="None" icon="sap-icon://order-status"/>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="1" title="" titleAlignment="Begin" titleLevel="Auto">
+								<layout:content>
+									<GenericTile header="Ordenes de Compra" subheader="Crear Orden" frameType="OneByOne" press="_onGenericTilePress1">
+										<tileContent>
+											<TileContent footer="" unit="">
+												<content>
+													<NumericContent value="" valueColor="Neutral" indicator="None" icon="sap-icon://add"/>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+								</layout:content>
+							</layout:BlockLayoutCell>
+							<layout:BlockLayoutCell width="2" title="" titleAlignment="End" titleLevel="Auto">
+								<layout:content>
+									<GenericTile header="Inventario" subheader="Ver inventario" frameType="OneByOne" press="_onGenericTilePress2">
+										<tileContent>
+											<TileContent footer="" unit="">
+												<content>
+													<NumericContent value="" valueColor="Neutral" indicator="None" icon="sap-icon://product"/>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+								</layout:content>
+							</layout:BlockLayoutCell>
+						</layout:content>
+					</layout:BlockLayoutRow>
+				</layout:content>
+			</layout:BlockLayout>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent>
+			<Button text="Alt" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress"/>
+		</headerContent>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

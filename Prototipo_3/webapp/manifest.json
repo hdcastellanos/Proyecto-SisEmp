@@ -1,0 +1,204 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.sap.build.standard.prototipo1",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.2.2"
+		},
+		"dataSources": {
+			"local": {
+				"uri": "/here/goes/your/serviceUrl/local/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.3.0",
+		"rootView": {
+			"viewName": "generated.app.view.DetalleProducto",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.50.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "local",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.sap.build.standard.prototipo1.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"Home"
+					]
+				}
+			},
+			"targets": {
+				"Home": {
+					"controlAggregation": "pages",
+					"viewName": "Home",
+					"viewId": "Home",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"CrearOrdenDeCompra2": {
+					"controlAggregation": "pages",
+					"viewName": "CrearOrdenDeCompra2",
+					"viewId": "CrearOrdenDeCompra2",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"Home2": {
+					"controlAggregation": "pages",
+					"viewName": "Home2",
+					"viewId": "Home2",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"InventarioProducto": {
+					"controlAggregation": "pages",
+					"viewName": "InventarioProducto",
+					"viewId": "InventarioProducto",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"EstadoOrdenesDeCompra": {
+					"controlAggregation": "pages",
+					"viewName": "EstadoOrdenesDeCompra",
+					"viewId": "EstadoOrdenesDeCompra",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"DetalleOdc": {
+					"controlAggregation": "pages",
+					"viewName": "DetalleOdc",
+					"viewId": "DetalleOdc",
+					"viewLevel": 1,
+					"transition": "show"
+				},
+				"DetalleProducto": {
+					"controlAggregation": "pages",
+					"viewName": "DetalleProducto",
+					"viewId": "DetalleProducto",
+					"viewLevel": 1,
+					"transition": "show"
+				}
+			},
+			"routes": [{
+				"pattern": "Home/:context:",
+				"name": "Home",
+				"target": [
+					"Home"
+				]
+			}, {
+				"pattern": "",
+				"name": "default",
+				"target": [
+					"Home"
+				]
+			}, {
+				"pattern": "CrearOrdenDeCompra2/:context:",
+				"name": "CrearOrdenDeCompra2",
+				"target": [
+					"CrearOrdenDeCompra2"
+				]
+			}, {
+				"pattern": "Home2/:context:",
+				"name": "Home2",
+				"target": [
+					"Home2"
+				]
+			}, {
+				"pattern": "InventarioProducto/:context:",
+				"name": "InventarioProducto",
+				"target": [
+					"InventarioProducto"
+				]
+			}, {
+				"pattern": "EstadoOrdenesDeCompra/:context:",
+				"name": "EstadoOrdenesDeCompra",
+				"target": [
+					"EstadoOrdenesDeCompra"
+				]
+			}, {
+				"pattern": "DetalleOdc/:context:",
+				"name": "DetalleOdc",
+				"target": [
+					"DetalleOdc"
+				]
+			}, {
+				"pattern": "DetalleProducto/:context:",
+				"name": "DetalleProducto",
+				"target": [
+					"DetalleProducto"
+				]
+			}]
+		}
+	}
+}

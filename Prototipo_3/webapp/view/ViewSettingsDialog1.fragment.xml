@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<ViewSettingsDialog>
+		<filterItems>
+			<ViewSettingsFilterItem text="Nombre" key="Nombre" items="{path: '/Nombre'}">
+				<items>
+					<ViewSettingsItem key="String___Nombre___{}" text="{}"></ViewSettingsItem>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsCustomItem text="Unidades"
+				filterCount="{parts:[{path:'/Unidades/vValueLT'}, {path:'/Unidades/vValueGT'}], formatter:'.filterCountFormatter'}">
+				<customControl>
+					<l:VerticalLayout width="100%">
+						<Toolbar>
+							<Label width="25%" text="Less than" class="sapUiSmallMarginBegin"/>
+							<Input width="33%" value="{path: '/Unidades/vValueLT'}"/>
+						</Toolbar>
+						<Toolbar>
+							<Label width="25%" text="More than" class="sapUiSmallMarginBegin"/>
+							<Input width="33%" value="{path: '/Unidades/vValueGT'}"/>
+						</Toolbar>
+					</l:VerticalLayout>
+				</customControl>
+			</ViewSettingsCustomItem>
+			<ViewSettingsFilterItem text="Estado" key="Estado" items="{path: '/Estado'}">
+				<items>
+					<ViewSettingsItem key="String___Estado___{}" text="{}"></ViewSettingsItem>
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

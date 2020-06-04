@@ -1,0 +1,206 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.prototipo1.controller.CrearOrdenDeCompra2" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Page showHeader="true" title="Marie Louise - Ordenes de compra" showFooter="false" showNavButton="true"
+		navButtonPress="_onPageNavButtonPress">
+		<content>
+			<form:Form width="1182.675048828125px" editable="true" visible="true" class="sapUiLargeMargin">
+				<form:title>
+					<core:Title text="Crear nueva orden de compra" level="Auto" icon="sap-icon://create"/>
+				</form:title>
+				<form:formContainers>
+					<form:FormContainer visible="true">
+						<form:formElements>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Número de orden" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<Text id ="noOrden" text="102" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Proveedor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<ComboBox selectionChange="onChange" id="oComboBox" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/proveedoresSet', templateShareable:true}">
+										<items>
+											<core:Item key ="{ID}" text="{Nombre}" enabled="true"
+											/>
+										</items>
+									</ComboBox>
+									
+								</form:fields>
+							</form:FormElement>
+							
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Telefono Proveedor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"  />
+				              
+								</form:label>
+								<form:fields>
+							      <Text id="telefonoP" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:fields>
+							</form:FormElement>
+							
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Correo Proveedor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+								<Text id = "correoP"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								
+								</form:fields>
+							</form:FormElement>
+							
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Direccion Proveedor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+								<Text id = "direccionP"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								
+								</form:fields>
+							</form:FormElement>
+							
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Ciudad Proveedor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+								<Text id = "ciudadP"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								
+								</form:fields>
+							</form:FormElement>
+							
+							
+							
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Fecha orden de compra" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<DatePicker id="fechaOrden" width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+										valueFormat="yyyyMMdd"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="Fecha pactada recibido" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"
+										visible="true"/>
+								</form:label>
+								<form:fields>
+									<DatePicker id="fechaPactada" width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+										valueFormat="yyyyMMdd"/>
+								</form:fields>
+							</form:FormElement>
+						</form:formElements>
+						<form:title/>
+					</form:FormContainer>
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+				</form:layout>
+			</form:Form>
+			<Table id="tableQuantity" width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+				class="sapUiResponsiveMargin">
+				<infoToolbar>
+					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+						<content>
+							<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+				<headerToolbar>
+					<OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+						<content>
+							<Title text="Materiales (4)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+							<ToolbarSpacer width=""/>
+							<OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true"
+								visible="true" iconDensityAware="false"/>
+							<Button text="Agregar Material" type="Accept" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Nombre del Material" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Cantidad" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Precio (unidad)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						</Column>
+						<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Costo Total" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							
+							<ComboBox selectionChange="onChange1" id= "mat1" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/materialesSet', templateShareable:true}">
+								<items>
+									<core:Item text="{Nombre}" enabled="true" key="Gancho 423"/>
+								
+								</items>
+							</ComboBox>
+						<Input id="cant1" enabled="true" required="false" visible="true" type="Number"   />
+							<Text id = "precioUn1"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+									<Text id = "precioTot1"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+									</cells>
+					</ColumnListItem>
+					<ColumnListItem type="Active">
+						<cells>
+							<ComboBox selectionChange="onChange2" id= "mat2" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'/materialesSet', templateShareable:true}">
+								<items>
+									<core:Item text="{Nombre}" enabled="true" key="Gancho 423"/>
+								
+								</items>
+							</ComboBox>
+						<Input id="canti2" enabled="true" required="false"  visible="true" type="Number"   />
+							<Text id = "precioUn2"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+									<Text id = "precioTot2"  width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+									</cells>
+					</ColumnListItem>
+				</items>
+				
+			</Table>
+			
+			
+			
+			<Button text="Save" type="Emphasized" icon="sap-icon://save" iconFirst="true" width="160.31875610351562px" enabled="true" visible="true"
+				iconDensityAware="false" class="sapUiLargeMarginBegin" press="_onButtonPress"/>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button  text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" />
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>
